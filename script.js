@@ -36,3 +36,15 @@ document.querySelector(".search-bar").addEventListener("keyup", function (event)
 });
 
 weather.fetchWeather("louisville");
+
+document.querySelector(".temp-convert button").addEventListener("click", function (celsius) {
+    var celsius = document.querySelector(".celsius").value;
+    var fahrenheit = celsius * (9 / 5) + 32;
+    document.querySelector(".fahrenheit-temp").innerText = fahrenheit.toFixed(2) + "°F";
+});
+
+document.querySelector(".speed-convert button").addEventListener("click", function (kmh) {
+    var kmh = document.querySelector(".kmh").value;
+    var mph = kmh / 1.609344;
+    document.querySelector(".mph").innerText = mph.toFixed(2) + "MPH";
+});

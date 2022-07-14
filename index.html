@@ -12,6 +12,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!--searching weather api-->
     <div class="card">
         <div class="search">
             <input type="text" class="search-bar" placeholder="search">
@@ -27,6 +28,25 @@
             <div class="humidity">Humidity: 60%</div>
             <div class="wind">Wind Speed: 6.2 km/h</div>
         </div> 
+    </div>
+    <!--celsius to fahrenheit converter-->
+    <div class="card">
+        <div class="temp-convert">
+            <input type="text" class="celsius" placeholder="°C to °F">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </div>
+            <h2 class="degrees">Degrees in Fahrenheit</h2>
+            <h1 class="fahrenheit-temp">--°F</h1>
+    </div>
+
+    <!--kmh to mph converter-->
+    <div class="card">
+        <div class="speed-convert">
+            <input type="text" class="kmh" placeholder="km/h to mph">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </div>
+            <h2 class="speed">Wind Speed in MPH</h2>
+            <h1 class="mph">--MPH</h1>
     </div>
     <script type="text/javascript" src="script.js"></script>
 </body>
