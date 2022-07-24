@@ -11,7 +11,7 @@ Three requirements included the project:
 2. Build a conversion tool that converts user input to another type and display it
     - Celsius to Fahreneheit Converter
     - Km/h to MPH Converter
-3. Implement a regular expression (regex) to ensure a field is always stored in the same format
+3. Implement a regular expression (regex) to ensure a field is always stored in the same format **APPROVED BY DON HANSEN**
     - used regex to ensure that input in the two converters were only numbers up to 2 decimal places since the values returned are rounded to two decimal places
 
 How to run project:
