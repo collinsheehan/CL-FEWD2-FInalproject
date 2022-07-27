@@ -43,21 +43,21 @@ weather.fetchWeather("louisville");
 
 //celius to fahrenheit converter
 document.querySelector(".temp-convert button").addEventListener("click", function (celsius) {
-    let celsius = document.querySelector(".celsius").value;
-    let fahrenheit = celsius * (9 / 5) + 32;
+    var celsius = document.querySelector(".celsius").value;
+    var fahrenheit = celsius * (9 / 5) + 32;
     document.querySelector(".fahrenheit-temp").innerText = fahrenheit.toFixed(2) + "°F";
 });
 //kmh to mph converter
 document.querySelector(".speed-convert button").addEventListener("click", function (kmh) {
-    let kmh = document.querySelector(".kmh").value;
-    let mph = kmh / 1.609344;
+    var kmh = document.querySelector(".kmh").value;
+    var mph = kmh / 1.609344;
     document.querySelector(".mph").innerText = mph.toFixed(2) + "MPH";
 });
 
 //temperature regex
 document.querySelector(".temp-convert button").addEventListener("click", function (number) {
-    let number = document.querySelector(".celsius").value;
-    let regexNumbers = /^\s*-?\d+(\.\d{1,2})?\s*$/;
+    var number = document.querySelector(".celsius").value;
+    var regexNumbers = /^\s*-?\d+(\.\d{1,2})?\s*$/;
     if(number.match(regexNumbers)) {
         return true;
     } else {
@@ -68,8 +68,8 @@ document.querySelector(".temp-convert button").addEventListener("click", functio
 
 //speed regex
 document.querySelector(".speed-convert button").addEventListener("click", function (number) {
-    let number = document.querySelector(".kmh").value;
-    let regexNumbers = /^\s*-?\d+(\.\d{1,2})?\s*$/;
+    var number = document.querySelector(".kmh").value;
+    var regexNumbers = /^\s*-?\d+(\.\d{1,2})?\s*$/;
     if(number.match(regexNumbers)) {
         return true;
     } else {
